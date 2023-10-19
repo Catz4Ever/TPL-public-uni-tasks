@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
+using System.Text;
 using System.Text.RegularExpressions;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -12,7 +13,7 @@ namespace ReadingApp
         static int returnNumberOfWords(string filePath)
         {
             int wordCount = 0;
-            using (StreamReader sr = new StreamReader(filePath))
+            using (StreamReader sr = new StreamReader(filePath, Encoding.UTF8))
             {
                 string line;
                 while ((line = sr.ReadLine()) != null)
@@ -28,7 +29,7 @@ namespace ReadingApp
         {
             string longestWord = string.Empty;
 
-            using (StreamReader sr = new StreamReader(filePath))
+            using (StreamReader sr = new StreamReader(filePath, Encoding.UTF8))
             {
                 string line;
                 while ((line = sr.ReadLine()) != null)
@@ -51,7 +52,7 @@ namespace ReadingApp
         {
             string shortestWord = string.Empty;
 
-            using (StreamReader sr = new StreamReader(filePath))
+            using (StreamReader sr = new StreamReader(filePath, Encoding.UTF8))
             {
                 string line;
                 while ((line = sr.ReadLine()) != null)
@@ -74,7 +75,7 @@ namespace ReadingApp
         {
             Dictionary<string, int> wordFrequency = new Dictionary<string, int>();
 
-            using (StreamReader sr = new StreamReader(filePath))
+            using (StreamReader sr = new StreamReader(filePath, Encoding.UTF8))
                 {
                     string line;
                     while ((line = sr.ReadLine()) != null)
@@ -116,7 +117,7 @@ namespace ReadingApp
         {
             Dictionary<string, int> wordFrequency = new Dictionary<string, int>();
 
-            using (StreamReader sr = new StreamReader(filePath))
+            using (StreamReader sr = new StreamReader(filePath, Encoding.UTF8))
             {
                 string line;
                 while ((line = sr.ReadLine()) != null)
@@ -161,6 +162,7 @@ namespace ReadingApp
 
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             Stopwatch sw = new Stopwatch();
             sw.Start();
             string bookName = "Verblud.txt";
@@ -195,6 +197,7 @@ namespace ReadingApp
             sw.Stop();
             TimeSpan ts = sw.Elapsed;
             Console.WriteLine("Elapsed time: "+ ts.ToString("mm\\:ss\\.ff"));
+            Console.ReadLine();
         }
     }
 }
