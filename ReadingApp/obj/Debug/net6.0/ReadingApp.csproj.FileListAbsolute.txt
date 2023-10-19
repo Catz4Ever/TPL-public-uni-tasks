@@ -1,0 +1,15 @@
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\bin\Debug\net6.0\ReadingApp.exe
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\bin\Debug\net6.0\ReadingApp.deps.json
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\bin\Debug\net6.0\ReadingApp.runtimeconfig.json
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\bin\Debug\net6.0\ReadingApp.dll
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\bin\Debug\net6.0\ReadingApp.pdb
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\obj\Debug\net6.0\ReadingApp.csproj.AssemblyReference.cache
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\obj\Debug\net6.0\ReadingApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\obj\Debug\net6.0\ReadingApp.AssemblyInfoInputs.cache
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\obj\Debug\net6.0\ReadingApp.AssemblyInfo.cs
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\obj\Debug\net6.0\ReadingApp.csproj.CoreCompileInputs.cache
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\obj\Debug\net6.0\ReadingApp.dll
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\obj\Debug\net6.0\refint\ReadingApp.dll
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\obj\Debug\net6.0\ReadingApp.pdb
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\obj\Debug\net6.0\ReadingApp.genruntimeconfig.cache
+C:\Users\Catz\source\repos\ReadingApp\ReadingApp\obj\Debug\net6.0\ref\ReadingApp.dll
