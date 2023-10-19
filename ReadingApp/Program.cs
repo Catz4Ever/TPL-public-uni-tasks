@@ -10,9 +10,9 @@ namespace ReadingApp
 {
     internal class Program
     {
+        public static int wordCount = 0;
         static int returnNumberOfWords(string filePath)
         {
-            int wordCount = 0;
             using (StreamReader sr = new StreamReader(filePath, Encoding.UTF8))
             {
                 string line;
@@ -69,6 +69,26 @@ namespace ReadingApp
                 }
             }
             return shortestWord;
+        }
+
+        static double returnAverageLength(string filePath)
+        {
+            double averageLength = 0;
+            using (StreamReader sr = new StreamReader(filePath, Encoding.UTF8))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    string[] words = RemovePunctuation(line).Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (string word in words)
+                    {
+                        averageLength += word.Length;
+                    }
+                }
+            }
+            averageLength = Math.Round(averageLength / (double)wordCount,2);
+
+            return averageLength;
         }
 
         public Dictionary<string, int> returnCommonWords(string filePath)
@@ -172,6 +192,9 @@ namespace ReadingApp
             //Console.WriteLine(filePath);
             int numberOfWords = returnNumberOfWords(filePath);
             Console.WriteLine($"Number of words:{numberOfWords}");
+
+            double averageLength = returnAverageLength(filePath);
+            Console.WriteLine($"Average Word Length: {averageLength}");
 
             string longestWord = returnLongestWord(filePath);
             Console.WriteLine($"Longest Word: {longestWord}");
